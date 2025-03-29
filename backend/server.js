@@ -13,7 +13,7 @@ app.use(express.json()); // For parsing JSON requests
 app.use("/api/auth", authRoutes);
 
 // ✅ 4. Start Server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3005;
 app.listen(PORT, () => {
   console.log(`✅ Server is running on port ${PORT}`);
 });
