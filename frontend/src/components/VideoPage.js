@@ -29,11 +29,16 @@ function VideoPage({ videos }) {
   }
 
   if (!selectedVideo) {
-    return <h1 style={{ textAlign: "center", marginTop: "50px" }}>Video Not Found</h1>;
+    return <h1 style={{ textAlign: "center", marginTop: "50px", color: "#fff" }}>Video Not Found</h1>;
   }
 
   return (
     <div style={styles.page}>
+      {/* Header */}
+      <div style={styles.header}>
+        <h1 style={styles.logo}>AI Stream</h1>
+      </div>
+
       {/* Video Title */}
       <h1 style={styles.videoTitle}>{selectedVideo.title}</h1>
 
@@ -47,25 +52,38 @@ function VideoPage({ videos }) {
 
       {/* Video Description */}
       <div style={styles.description}>
-        <h2>Description</h2>
-        <p>
-          This is a sample description for <strong>{selectedVideo.title}</strong>. 
-          Enjoy watching!
+        <h2 style={styles.sectionTitle}>Description</h2>
+        <p style={styles.descriptionText}>
+          This is a sample description for <strong>{selectedVideo.title}</strong>. Enjoy watching!
         </p>
       </div>
 
       {/* Recommended Videos Section */}
       <div style={styles.recommended}>
-        <h2>Recommended Videos</h2>
-        <div style={styles.videoGrid}>
+        <h2 style={styles.sectionTitle}>Recommended Videos</h2>
+        <ul style={styles.recommendedList}>
           {recommendedVideos.map((video) => (
-            <Link key={video.id} to={`/video/${video.id}`} style={styles.link}>
-              <div style={styles.card}>
-                <img src={video.thumbnail} alt={video.title} style={styles.thumbnail} />
-                <h3 style={styles.videoTitleSmall}>{video.title}</h3>
-              </div>
-            </Link>
+            <li key={video.id} style={styles.recommendedItem}>
+              <Link to={`/video/${video.id}`} style={styles.recommendedLink}>
+                {video.title}
+              </Link>
+            </li>
           ))}
+        </ul>
+      </div>
+
+      {/* Positional Settings (as shown in reference) */}
+      <div style={styles.positionalSettings}>
+        <div style={styles.searchContainer}>
+          <input 
+            type="text" 
+            placeholder="Type here to search" 
+            style={styles.searchInput} 
+          />
+        </div>
+        <div style={styles.checkboxContainer}>
+          <input type="checkbox" id="settingsCheckbox" style={styles.checkbox} />
+          <label htmlFor="settingsCheckbox" style={styles.checkboxLabel}></label>
         </div>
       </div>
 
@@ -77,28 +95,51 @@ function VideoPage({ videos }) {
 
 // Styles (Responsive)
 const styles = {
-  page: { textAlign: "center", padding: "20px" },
+  page: { 
+    textAlign: "center", 
+    padding: "20px",
+    backgroundColor: "#1a1a1a",
+    color: "#fff",
+    minHeight: "100vh"
+  },
 
-  videoTitle: { fontSize: "22px", fontWeight: "bold", marginBottom: "10px" },
+  header: {
+    marginBottom: "30px"
+  },
+
+  logo: {
+    fontSize: "28px",
+    fontWeight: "bold",
+    color: "#ffcc00",
+    margin: "0",
+    padding: "10px 0"
+  },
+
+  videoTitle: { 
+    fontSize: "24px", 
+    fontWeight: "bold", 
+    marginBottom: "20px",
+    color: "#ffcc00"
+  },
 
   videoContainer: { 
     display: "flex", 
     justifyContent: "center", 
     width: "100%", 
-    marginBottom: "20px" 
+    marginBottom: "30px" 
   },
 
   video: { 
     width: "90%", 
     maxWidth: "900px", 
     borderRadius: "8px", 
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" 
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" 
   },
 
   description: { 
     marginTop: "20px", 
-    padding: "15px", 
-    background: "#f9f9f9", 
+    padding: "20px", 
+    background: "#2a2a2a", 
     borderRadius: "8px", 
     textAlign: "left", 
     maxWidth: "900px", 
@@ -106,53 +147,91 @@ const styles = {
     fontSize: "16px"
   },
 
+  sectionTitle: {
+    color: "#ffcc00",
+    fontSize: "20px",
+    marginBottom: "15px"
+  },
+
+  descriptionText: {
+    lineHeight: "1.6",
+    margin: "0"
+  },
+
   recommended: { 
-    marginTop: "20px", 
+    marginTop: "30px", 
     textAlign: "left", 
     maxWidth: "900px", 
-    margin: "auto" 
+    margin: "auto",
+    padding: "0 20px"
   },
 
-  videoGrid: { 
-    display: "grid", 
-    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", 
-    gap: "15px",
-    justifyContent: "center"
+  recommendedList: {
+    listStyleType: "none",
+    padding: "0",
+    margin: "0"
   },
 
-  card: { 
-    width: "100%", 
-    maxWidth: "200px", 
-    borderRadius: "8px", 
-    padding: "10px", 
-    background: "#fff", 
-    boxShadow: "0px 2px 5px rgba(0,0,0,0.2)", 
-    textAlign: "center"
+  recommendedItem: {
+    padding: "10px 0",
+    borderBottom: "1px solid #333"
   },
 
-  thumbnail: { 
-    width: "100%", 
-    borderRadius: "8px", 
-    cursor: "pointer" 
+  recommendedLink: {
+    color: "#fff",
+    textDecoration: "none",
+    fontSize: "16px",
+    display: "block",
+    transition: "color 0.3s",
+    ":hover": {
+      color: "#ffcc00"
+    }
   },
 
-  videoTitleSmall: { 
-    fontSize: "14px", 
-    marginTop: "5px", 
-    fontWeight: "bold" 
+  positionalSettings: {
+    display: "flex",
+    justifyContent: "space-between",
+    maxWidth: "900px",
+    margin: "30px auto",
+    padding: "0 20px"
   },
 
-  link: { 
-    textDecoration: "none", 
-    color: "black" 
+  searchContainer: {
+    flex: "1"
+  },
+
+  searchInput: {
+    width: "100%",
+    maxWidth: "400px",
+    padding: "10px",
+    borderRadius: "4px",
+    border: "1px solid #444",
+    backgroundColor: "#2a2a2a",
+    color: "#fff",
+    fontSize: "14px"
+  },
+
+  checkboxContainer: {
+    display: "flex",
+    alignItems: "center"
+  },
+
+  checkbox: {
+    marginRight: "10px"
+  },
+
+  checkboxLabel: {
+    fontSize: "14px"
   },
 
   homeLink: { 
     display: "block", 
-    marginTop: "20px", 
+    marginTop: "30px", 
     textDecoration: "none", 
     color: "#ffcc00", 
-    fontSize: "18px" 
+    fontSize: "18px",
+    fontWeight: "bold",
+    padding: "10px 0"
   },
 };
 

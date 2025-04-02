@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "video.js": "^8.22.0"
-=======
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -42,6 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
->>>>>>> 7ac8b99 (Added Signup and Login)
   }
 }
