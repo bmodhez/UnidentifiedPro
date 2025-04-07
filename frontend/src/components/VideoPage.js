@@ -1,3 +1,5 @@
+// pages/VideoPage.jsx
+
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 
@@ -44,17 +46,28 @@ function VideoPage({ videos }) {
 
       {/* Video Player */}
       <div style={styles.videoContainer}>
-        <video controls style={styles.video}>
-          <source src={selectedVideo.src} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {selectedVideo.src.includes("faphouselive.com") || selectedVideo.src.includes("mega.nz") ? (
+          <iframe
+            src={selectedVideo.src}
+            style={styles.video}
+            title={selectedVideo.title}
+            allow="camera; microphone; autoplay"
+            allowFullScreen
+            loading="lazy"
+          />
+        ) : (
+          <video controls style={styles.video}>
+            <source src={selectedVideo.src} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
       </div>
 
       {/* Video Description */}
       <div style={styles.description}>
         <h2 style={styles.sectionTitle}>Description</h2>
         <p style={styles.descriptionText}>
-          This is a sample description for <strong>{selectedVideo.title}</strong>. Enjoy watching!
+          This is the sample description for <strong>{selectedVideo.title}</strong>. Enjoy watching!
         </p>
       </div>
 
@@ -72,13 +85,13 @@ function VideoPage({ videos }) {
         </ul>
       </div>
 
-      {/* Positional Settings (as shown in reference) */}
+      {/* Positional Settings */}
       <div style={styles.positionalSettings}>
         <div style={styles.searchContainer}>
-          <input 
-            type="text" 
-            placeholder="Type here to search" 
-            style={styles.searchInput} 
+          <input
+            type="text"
+            placeholder="Type here to search"
+            style={styles.searchInput}
           />
         </div>
         <div style={styles.checkboxContainer}>
@@ -129,11 +142,15 @@ const styles = {
     marginBottom: "30px" 
   },
 
-  video: { 
-    width: "90%", 
-    maxWidth: "900px", 
-    borderRadius: "8px", 
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" 
+  video: {
+    width: "100%",
+    maxWidth: "1300px",
+    height: "690px", // Adjust height for a good aspect ratio
+    margin: "0 auto",
+    display: "block",
+    border: "none",
+    borderRadius: "12px",
+    boxShadow: "0 0 20px rgba(0,0,0,0.5)"
   },
 
   description: { 

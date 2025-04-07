@@ -2,26 +2,28 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import VideoPage from "./components/VideoPage";
 
+
+
 const categories = {
   "Trending Now": [
-    { id: 1, title: "Hot Summer Fling", src: "/videos/trending1.mp4", thumbnail: "/images/mypic.jpg", views: "1.2M", duration: "12:45" },
-    { id: 2, title: "Passionate Encounter", src: "/videos/trending2.mp4", thumbnail: "/images/bgbanner.jpg", views: "890K", duration: "18:30" },
-    { id: 3, title: "Intimate Moments", src: "/videos/trending2.mp4", thumbnail: "/images/mira.jpg", views: "2.4M", duration: "22:15" },
-    { id: 4, title: "Late Night Desire", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "560K", duration: "15:20" },
-    { id: 5, title: "Romantic Getaway", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "1.1M", duration: "25:10" },
-    { id: 6, title: "Sensual Experience", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "780K", duration: "19:45" },
-    { id: 7, title: "Sensual Experience", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "780K", duration: "19:45" },
-    { id: 8, title: "Sensual Experience", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "780K", duration: "19:45" },
-    { id: 9, title: "Sensual Experience", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "780K", duration: "19:45" },
-    { id: 10, title: "Sensual Experience", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "780K", duration: "19:45" },
-    { id: 11, title: "Sensual Experience", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "780K", duration: "19:45" },
-    { id: 12, title: "Sensual Experience", src: "/videos/trending2.mp4", thumbnail: "/images/mypic.jpg", views: "780K", duration: "19:45" },
+    { id: 1, title: "Hot  Fling", src: "https://mega.nz/embed/2wxC2AyL#uS2zzx8eO3EozwzMtFk5Su_5OodDMzGI-3EGe3DcBq0", thumbnail: "/images/v1.webp", views: "1.2M", duration: "12:45" },
+    { id: 2, title: "Passionate Encounter", src: "https://mega.nz/embed/mlhkQS4T#bX6nyD-55_CJnPt47Q6d7J42FWQZ1u9R2JfngM35plE", thumbnail: "/images/v2.webp", views: "890K", duration: "18:30" },
+    { id: 3, title: "Intimate Moments", src: "https://mega.nz/embed/GgAkhYwL#MOVkjf4B6pmk4rojHhJIu4vDyC7Osc8WRD13qm-HI6E", thumbnail: "/images/v3.webp", views: "2.4M", duration: "22:15" },
+    { id: 4, title: "Late Night Desire", src: "https://mega.nz/embed/voxSiYqK#huxqRBknwNALZgqGqzYVsOLtnpUK7pMbcAoEvHP-_Ms", thumbnail: "/images/v4.webp", views: "560K", duration: "15:20" },
+    { id: 5, title: "Romantic Getaway", src: "https://mega.nz/embed/3xYUyAgS#RPCwnj_4nOprRVMOIjyr2jGbnvnD58zAYHcjl6m0vwc", thumbnail: "/images/sunny.webp", views: "1.1M", duration: "25:10" },
+    { id: 6, title: "Sensual Experience", src: "https://mega.nz/embed/boQlEYYZ#PLIWQmSEsOg7SdFXBaQoCrBZ0c2UqCsQ4ZgIYOl09sE", thumbnail: "/images/v6.webp", views: "780K", duration: "19:45" },
+    { id: 7, title: "Sensual Experience", src: "https://mega.nz/embed/vpJWzI7b#yoUXftpsp3lJ2RPkWEEHr0S0H9oA3skM62dFLqyLNKA", thumbnail: "/images/v7.webp", views: "780K", duration: "19:45" },
+    { id: 8, title: "Sensual Experience", src: "https://mega.nz/embed/nl40DYZR#mX5u6Mb9rhgWjQ97LTnwEp_OF23qeF0o2lca_NuvNZo", thumbnail: "/images/v8.webp", views: "780K", duration: "19:45" },
+    { id: 9, title: "Sensual Experience", src: "https://mega.nz/embed/y45TCBiD#AYVVtpSpgOg-EXdBdv7K7PngwQgqejOVB70ko6eI82Q", thumbnail: "/images/v9.webp", views: "780K", duration: "19:45" },
+    { id: 10, title: "Sensual Experience", src: "https://mega.nz/embed/Lsgh1KYY#1QL0PJ_jBvxky4AKSc0yEoRWr-ZVRdj2nLFJLpxupy4", thumbnail: "/images/v10.webp", views: "780K", duration: "19:45" },
+    { id: 11, title: "Sensual Experience", src: "https://mega.nz/embed/mhZ1GRiT#yQfWh4RMSkj-ieSt9_BxHoaqz8qF1lUn8ZRD7TWDqGo", thumbnail: "/images/v11.webp", views: "780K", duration: "19:45" },
+    { id: 12, title: "Sensual Experience", src: "https://mega.nz/embed/SspEER6I#Zy_-XA6cXZOXbN8yxdP3saJxo85uImVBD_bYcqtTCSA", thumbnail: "/images/v12.webp", views: "780K", duration: "19:45" },
 
   ],
   "New Releases": [
-    { id: 13, title: "Fresh Attraction", src: "/videos/latest1.mp4", thumbnail: "/images/mira.jpg", views: "320K", duration: "14:20" },
-    { id: 14, title: "Private Session", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "210K", duration: "16:50" },
-    { id: 15, title: "Exclusive Preview", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "430K", duration: "21:15" },
+    { id: 13, title: "Fresh Attraction", src: "https://mega.nz/embed/78xTUKAK#vT_lVyfGrZ-wzABUP_sbpSgNWvpHWRRPju8snv8yVFo", thumbnail: "/images/v13.webp", views: "320K", duration: "14:20" },
+    { id: 14, title: "Private Session", src: "https://mega.nz/embed/r8JwyaxY#OYfiKueAjizse7OQPontGuHoe8AP5D1QPoaCvd14NNk", thumbnail: "/images/v14.webp", views: "210K", duration: "16:50" },
+    { id: 15, title: "Exclusive Preview", src: "https://mega.nz/embed/P44ixLDD#Ho-GYwV67RSrvklS8XVUIBwnhUxzh5ZE2E9LKkOYVZo", thumbnail: "/images/v15.webp", views: "430K", duration: "21:15" },
     { id: 16, title: "Secret Rendezvous", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "190K", duration: "17:30" },
     { id: 17, title: "Midnight Fantasy", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "270K", duration: "23:45" },
     { id: 18, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
@@ -36,16 +38,16 @@ const categories = {
 
   ],
   "Live Performers": [
-    { id: 27, title: "Cam Model - Lena", src: "/videos/latest1.mp4", thumbnail: "/images/mira.jpg", views: "Live", duration: "Online" },
-    { id: 28, title: "Cam Model - Sophia", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
-    { id: 29, title: "Cam Model - Mia", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
-    { id: 30, title: "Cam Model - Emma", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
-    { id: 31, title: "Cam Model - Olivia", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
-    { id: 32, title: "Cam Model - Ava", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
-    { id: 33, title: "Cam Model - Ava", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
-    { id: 34, title: "Cam Model - Ava", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
-    { id: 35, title: "Cam Model - Ava", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
-    { id: 36, title: "Cam Model - Ava", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "Live", duration: "Online" },
+    { id: 27, title: "Cam Model - Shenaya", src: "https://faphouselive.com/Shenaya-4U", thumbnail: "/images/liv1.webp", views: "Live", duration: "Online" },
+    { id: 28, title: "Cam Model - Neha Veer", src: "https://faphouselive.com/Neha-veer", thumbnail: "/images/liv2.webp", views: "Live", duration: "Online" },
+    { id: 29, title: "Cam Model - Tanisha", src: "https://faphouselive.com/Tanisha-1", thumbnail: "/images/liv3.webp", views: "Live", duration: "Online" },
+    { id: 30, title: "Cam Model - Horny Nancy", src: "https://faphouselive.com/hornynancy123", thumbnail: "/images/liv4.webp", views: "Live", duration: "Online" },
+    { id: 31, title: "Cam Model - Mia", src: "https://faphouselive.com/Something_pork2", thumbnail: "/images/liv5.webp", views: "Live", duration: "Online" },
+    { id: 32, title: "Cam Model - Riya Sexy", src: "https://faphouselive.com/Riya_35_sexy", thumbnail: "/images/liv6.webp", views: "Live", duration: "Online" },
+    { id: 33, title: "Cam Model - Sparkling Queen", src: "https://faphouselive.com/sparkling_queen", thumbnail: "/images/liv7.webp", views: "Live", duration: "Online" },
+    { id: 34, title: "Cam Model - Cute Sexy Teacher", src: "https://faphouselive.com/Cute_Sexy_Teacher_69", thumbnail: "/images/liv8.webp", views: "Live", duration: "Online" },
+    { id: 35, title: "Cam Model - Divya Girl", src: "https://faphouselive.com/Divya_girl", thumbnail: "/images/liv10.webp", views: "Live", duration: "Online" },
+    { id: 36, title: "Cam Model - Lunatica", src: "https://faphouselive.com/LunaticaBae", thumbnail: "/images/liv9.webp", views: "Live", duration: "Online" },
 
   ],
   "Popular Categories": [
