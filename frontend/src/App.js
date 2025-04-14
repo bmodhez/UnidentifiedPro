@@ -6,35 +6,35 @@ import VideoPage from "./components/VideoPage";
 
 const categories = {
   "Trending Now": [
-    { id: 1, title: "Hot  Fling", src: "https://mega.nz/embed/2wxC2AyL#uS2zzx8eO3EozwzMtFk5Su_5OodDMzGI-3EGe3DcBq0", thumbnail: "/images/v1.webp", views: "1.2M", duration: "12:45" },
-    { id: 2, title: "Passionate Encounter", src: "https://mega.nz/embed/mlhkQS4T#bX6nyD-55_CJnPt47Q6d7J42FWQZ1u9R2JfngM35plE", thumbnail: "/images/v2.webp", views: "890K", duration: "18:30" },
-    { id: 3, title: "Intimate Moments", src: "https://mega.nz/embed/GgAkhYwL#MOVkjf4B6pmk4rojHhJIu4vDyC7Osc8WRD13qm-HI6E", thumbnail: "/images/v3.webp", views: "2.4M", duration: "22:15" },
-    { id: 4, title: "Late Night Desire", src: "https://mega.nz/embed/voxSiYqK#huxqRBknwNALZgqGqzYVsOLtnpUK7pMbcAoEvHP-_Ms", thumbnail: "/images/v4.webp", views: "560K", duration: "15:20" },
-    { id: 5, title: "Romantic Getaway", src: "https://mega.nz/embed/3xYUyAgS#RPCwnj_4nOprRVMOIjyr2jGbnvnD58zAYHcjl6m0vwc", thumbnail: "/images/sunny.webp", views: "1.1M", duration: "25:10" },
-    { id: 6, title: "Sensual Experience", src: "https://mega.nz/embed/boQlEYYZ#PLIWQmSEsOg7SdFXBaQoCrBZ0c2UqCsQ4ZgIYOl09sE", thumbnail: "/images/v6.webp", views: "780K", duration: "19:45" },
-    { id: 7, title: "Sensual Experience", src: "https://mega.nz/embed/vpJWzI7b#yoUXftpsp3lJ2RPkWEEHr0S0H9oA3skM62dFLqyLNKA", thumbnail: "/images/v7.webp", views: "780K", duration: "19:45" },
-    { id: 8, title: "Sensual Experience", src: "https://mega.nz/embed/nl40DYZR#mX5u6Mb9rhgWjQ97LTnwEp_OF23qeF0o2lca_NuvNZo", thumbnail: "/images/v8.webp", views: "780K", duration: "19:45" },
-    { id: 9, title: "Sensual Experience", src: "https://mega.nz/embed/y45TCBiD#AYVVtpSpgOg-EXdBdv7K7PngwQgqejOVB70ko6eI82Q", thumbnail: "/images/v9.webp", views: "780K", duration: "19:45" },
-    { id: 10, title: "Sensual Experience", src: "https://mega.nz/embed/Lsgh1KYY#1QL0PJ_jBvxky4AKSc0yEoRWr-ZVRdj2nLFJLpxupy4", thumbnail: "/images/v10.webp", views: "780K", duration: "19:45" },
-    { id: 11, title: "Sensual Experience", src: "https://mega.nz/embed/mhZ1GRiT#yQfWh4RMSkj-ieSt9_BxHoaqz8qF1lUn8ZRD7TWDqGo", thumbnail: "/images/v11.webp", views: "780K", duration: "19:45" },
-    { id: 12, title: "Sensual Experience", src: "https://mega.nz/embed/SspEER6I#Zy_-XA6cXZOXbN8yxdP3saJxo85uImVBD_bYcqtTCSA", thumbnail: "/images/v12.webp", views: "780K", duration: "19:45" },
+    { id: 1, title: "First time honeymoon in home very hard", src: "https://mega.nz/embed/2wxC2AyL#uS2zzx8eO3EozwzMtFk5Su_5OodDMzGI-3EGe3DcBq0", thumbnail: "/images/v1.webp", views: "1.2M", duration: "12:45" },
+    { id: 2, title: "Horny Devar fucks Gorgeous Newly Married Indian Bhabhi ( Hindi Audio )", src: "https://mega.nz/embed/mlhkQS4T#bX6nyD-55_CJnPt47Q6d7J42FWQZ1u9R2JfngM35plE", thumbnail: "/images/v2.webp", views: "890K", duration: "18:30" },
+    { id: 3, title: "Tight Pussy Desi Bhabhi in Saree Fucked Hard by Devar in Hindi Audio", src: "https://mega.nz/embed/GgAkhYwL#MOVkjf4B6pmk4rojHhJIu4vDyC7Osc8WRD13qm-HI6E", thumbnail: "/images/v3.webp", views: "2.4M", duration: "22:15" },
+    { id: 4, title: "The house maid sucked the master's dick.", src: "https://mega.nz/embed/voxSiYqK#huxqRBknwNALZgqGqzYVsOLtnpUK7pMbcAoEvHP-_Ms", thumbnail: "/images/v4.webp", views: "560K", duration: "15:20" },
+    { id: 5, title: "Sunny Leone, is the worlds most famous Naughty Office Girl", src: "https://mega.nz/embed/3xYUyAgS#RPCwnj_4nOprRVMOIjyr2jGbnvnD58zAYHcjl6m0vwc", thumbnail: "/images/sunny.webp", views: "1.1M", duration: "25:10" },
+    { id: 6, title: "Hot Indian Bhabhi convinced her brother-in-law and had sex with him", src: "https://mega.nz/embed/boQlEYYZ#PLIWQmSEsOg7SdFXBaQoCrBZ0c2UqCsQ4ZgIYOl09sE", thumbnail: "/images/v6.webp", views: "780K", duration: "19:45" },
+    { id: 7, title: "Indian village house wife kissing housband", src: "https://mega.nz/embed/vpJWzI7b#yoUXftpsp3lJ2RPkWEEHr0S0H9oA3skM62dFLqyLNKA", thumbnail: "/images/v7.webp", views: "780K", duration: "19:45" },
+    { id: 8, title: "Indian step mom fucked in doggy style!", src: "https://mega.nz/embed/nl40DYZR#mX5u6Mb9rhgWjQ97LTnwEp_OF23qeF0o2lca_NuvNZo", thumbnail: "/images/v8.webp", views: "780K", duration: "19:45" },
+    { id: 9, title: "Boyfriend and girlfriend fucked in the garden at night", src: "https://mega.nz/embed/y45TCBiD#AYVVtpSpgOg-EXdBdv7K7PngwQgqejOVB70ko6eI82Q", thumbnail: "/images/v9.webp", views: "780K", duration: "19:45" },
+    { id: 10, title: "18+ Beauty Sofia Moaning Loud While Fucking Hard in Doggy Style and Missionary", src: "https://mega.nz/embed/Lsgh1KYY#1QL0PJ_jBvxky4AKSc0yEoRWr-ZVRdj2nLFJLpxupy4", thumbnail: "/images/v10.webp", views: "780K", duration: "19:45" },
+    { id: 11, title: "Indian Hot Sexy Bhabhi Fuck with desi saree", src: "https://mega.nz/embed/mhZ1GRiT#yQfWh4RMSkj-ieSt9_BxHoaqz8qF1lUn8ZRD7TWDqGo", thumbnail: "/images/v11.webp", views: "780K", duration: "19:45" },
+    { id: 12, title: "Fuck My Step Mother While My Wife Not in Home, My Slut Step Mother Enjoy with Me While My Wife Not in Home, Step Mother Blow Job", src: "https://mega.nz/embed/SspEER6I#Zy_-XA6cXZOXbN8yxdP3saJxo85uImVBD_bYcqtTCSA", thumbnail: "/images/v12.webp", views: "780K", duration: "19:45" },
 
   ],
   "New Releases": [
-    { id: 13, title: "Fresh Attraction", src: "https://mega.nz/embed/78xTUKAK#vT_lVyfGrZ-wzABUP_sbpSgNWvpHWRRPju8snv8yVFo", thumbnail: "/images/v13.webp", views: "320K", duration: "14:20" },
-    { id: 14, title: "Private Session", src: "https://mega.nz/embed/r8JwyaxY#OYfiKueAjizse7OQPontGuHoe8AP5D1QPoaCvd14NNk", thumbnail: "/images/v14.webp", views: "210K", duration: "16:50" },
-    { id: 15, title: "Exclusive Preview", src: "https://mega.nz/embed/P44ixLDD#Ho-GYwV67RSrvklS8XVUIBwnhUxzh5ZE2E9LKkOYVZo", thumbnail: "/images/v15.webp", views: "430K", duration: "21:15" },
-    { id: 16, title: "Secret Rendezvous", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "190K", duration: "17:30" },
-    { id: 17, title: "Midnight Fantasy", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "270K", duration: "23:45" },
-    { id: 18, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
-    { id: 19, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
-    { id: 20, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
-    { id: 21, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
-    { id: 22, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
-    { id: 23, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
-    { id: 24, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
-    { id: 25, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
-    { id: 26, title: "Forbidden Pleasure", src: "/videos/latest2.mp4", thumbnail: "/images/thumb4.jpg", views: "350K", duration: "18:20" },
+    { id: 13, title: "Desi Big Milk Sex Video", src: "https://mega.nz/embed/78xTUKAK#vT_lVyfGrZ-wzABUP_sbpSgNWvpHWRRPju8snv8yVFo", thumbnail: "/images/v13.webp", views: "320K", duration: "14:20" },
+    { id: 14, title: "Mallu boss and hot maid fuck in bedroom while boss's wife not in home, Cheatin g mallu maid hot fuck with boss, Maid and boss", src: "https://mega.nz/embed/r8JwyaxY#OYfiKueAjizse7OQPontGuHoe8AP5D1QPoaCvd14NNk", thumbnail: "/images/v14.webp", views: "210K", duration: "16:50" },
+    { id: 15, title: "Alyx Star's Big Tits Are the Game Winner", src: "https://mega.nz/embed/P44ixLDD#Ho-GYwV67RSrvklS8XVUIBwnhUxzh5ZE2E9LKkOYVZo", thumbnail: "/images/v15.webp", views: "430K", duration: "21:15" },
+    { id: 16, title: "Kamasutra of Hot Indian Desi Porn Star Pratibha", src: "https://mega.nz/embed/6lRiHQKB#RD75Z6hhLmg0tugfJ-xE8KOmnwwmINaM7lUrguQQnYY", thumbnail: "/images/v16.webp", views: "190K", duration: "17:30" },
+    { id: 17, title: "Close up pussy fuck by using silicon condom", src: "https://mega.nz/embed/20BRUbgL#p2A5S3Qb2x6-7peBwVxypoqiarPD_zaDIHGyJK8vYZY", thumbnail: "/images/v17.webp", views: "270K", duration: "23:45" },
+    { id: 18, title: "Bhabhi ke boor me rang laga ke pela HOLI SPECIALe", src: "https://mega.nz/embed/P8whzC6A#Xtt4xK0zZ4ftncaS-rYmELE4wJ76SulEe-la8gA0RHk", thumbnail: "/images/v18.webp", views: "350K", duration: "18:20" },
+    { id: 19, title: "Village hot bhabhi sex with his Husband", src: "https://mega.nz/embed/TkxwQKJa#KP1knidQSHPdsIDfIXXMdxtK400mvXAExtnjDWk1ylE", thumbnail: "/images/v19.webp", views: "350K", duration: "18:20" },
+    { id: 20, title: "Sofia Leone XX Big Hot Boobs", src: "https://mega.nz/embed/SkoVgTxB#6-wcEkDPAHp-u8fq00b8LrgVPqfvz6zH8CtVZ2R8NIE", thumbnail: "/images/v20.webp", views: "350K", duration: "18:20" },
+    { id: 21, title: "Boyfriend and girlfriend fucked in the garden at night", src: "https://mega.nz/embed/H8plCb7Q#zhIgSIS8r2ng_uHNHq9aPTa498QP6hTXzHl9Iq1NtuM", thumbnail: "/images/v21.webp", views: "350K", duration: "18:20" },
+    { id: 22, title: "Fully close up nude Desi Marathi couple sex", src: "https://mega.nz/embed/m1JDUaYA#fI8sGlqgGq0DplJkq5hsKsa-fYsDRF1vaxaGfAzHet4", thumbnail: "/images/v22.webp", views: "350K", duration: "18:20" },
+    { id: 23, title: "Beautiful Bengali village housewife fucking and saree and black blouse remove boob sucking", src: "https://mega.nz/embed/3gInmYiD#T4F0OCZJJVEJFLO97-YvtsqIyEZFH-wLkoaKC20oRSM", thumbnail: "/images/v23.webp", views: "350K", duration: "18:20" },
+    { id: 24, title: "Mia Kalifa New XX Round Big Boobs ", src: "https://mega.nz/embed/Lgx21ZZR#hEQMe2IWpNBzs4Xcb9dHE7uBEyBcqdn_gXVWswVLpNI", thumbnail: "/images/v24.webp", views: "350K", duration: "18:20" },
+    { id: 25, title: "Indian girlfriend fucked by lover before her marriage", src: "https://mega.nz/embed/OwQBCRxD#Td8XrUlAHvqvK38FvvFP-x_il9HxgRoRQAvnopxt38s", thumbnail: "/images/v25.webp", views: "350K", duration: "18:20" },
+    { id: 26, title: "Big Tit step sister Fucking her brother in law xxx videos,step Brother and stepSister XXX fuck while their families are outside", src: "https://mega.nz/embed/nl40DYZR#mX5u6Mb9rhgWjQ97LTnwEp_OF23qeF0o2lca_NuvNZo", thumbnail: "/images/v10.webp", views: "350K", duration: "18:20" },
 
   ],
   "Live Performers": [
@@ -51,12 +51,12 @@ const categories = {
 
   ],
   "Popular Categories": [
-    { id: 40, title: "Amateur", src: "/videos/cat1.mp4", thumbnail: "/images/thumb4.jpg", views: "2.1M", duration: "" },
-    { id: 41, title: "Professional", src: "/videos/cat2.mp4", thumbnail: "/images/mira.jpg", views: "1.8M", duration: "" },
-    { id: 42, title: "Couples", src: "/videos/cat3.mp4", thumbnail: "/images/mypic.jpg", views: "1.5M", duration: "" },
-    { id: 43, title: "Solo", src: "/videos/cat4.mp4", thumbnail: "/images/thumb4.jpg", views: "1.3M", duration: "" },
-    { id: 44, title: "Lesbian", src: "/videos/cat5.mp4", thumbnail: "/images/mira.jpg", views: "1.6M", duration: "" },
-    { id: 45, title: "Gay", src: "/videos/cat6.mp4", thumbnail: "/images/mypic.jpg", views: "1.4M", duration: "" },
+    { id: 40, title: "Amateur", src: "https://mega.nz/embed/boQlEYYZ#PLIWQmSEsOg7SdFXBaQoCrBZ0c2UqCsQ4ZgIYOl09sE", thumbnail: "/images/v6.webp", views: "2.1M", duration: "" },
+    { id: 41, title: "Professional", src: "https://mega.nz/embed/Lsgh1KYY#1QL0PJ_jBvxky4AKSc0yEoRWr-ZVRdj2nLFJLpxupy4", thumbnail: "/images/v10.webp", views: "1.8M", duration: "" },
+    { id: 42, title: "Couples", src: "https://mega.nz/embed/m1JDUaYA#fI8sGlqgGq0DplJkq5hsKsa-fYsDRF1vaxaGfAzHet4", thumbnail: "/images/v25.webp", views: "1.5M", duration: "" },
+    { id: 43, title: "Solo", src: "https://mega.nz/embed/OwQBCRxD#Td8XrUlAHvqvK38FvvFP-x_il9HxgRoRQAvnopxt38s", thumbnail: "/images/v28.webp", views: "1.3M", duration: "" },
+    { id: 44, title: "Lesbian", src: "https://mega.nz/embed/r8JwyaxY#OYfiKueAjizse7OQPontGuHoe8AP5D1QPoaCvd14NNk", thumbnail: "/images/v14.webp", views: "1.6M", duration: "" },
+    { id: 45, title: "Gay", src: "https://mega.nz/embed/P8whzC6A#Xtt4xK0zZ4ftncaS-rYmELE4wJ76SulEe-la8gA0RHk", thumbnail: "/images/v18.webp", views: "1.4M", duration: "" },
   ]
 };
 
@@ -69,8 +69,8 @@ function Home() {
       <div style={styles.sidebar}>
         <div style={styles.logoContainer}>
           <Link to="/" style={styles.logoLink}>
-            <span style={styles.logoPart1}>AI</span>
-            <span style={styles.logoPart2}>Stream</span>
+            <span style={styles.logoPart1}>The</span>
+            <span style={styles.logoPart2}>Lundflix</span>
           </Link>
         </div>
         
@@ -102,7 +102,7 @@ function Home() {
       <div style={styles.content}>
         <div style={styles.header}>
           <div style={styles.searchContainer}>
-            <input type="text" placeholder="Search videos..." style={styles.searchInput} />
+            <input type ="text" placeholder="Search videos..." style={styles.searchInput} />
             <button style={styles.searchButton}>
               <i className="fa fa-search" style={styles.searchIcon}></i>
             </button>
@@ -144,8 +144,8 @@ function Navbar() {
     <nav style={styles.navbar}>
       <div style={styles.navContainer}>
         <Link to="/" style={styles.navLogoLink}>
-          <span style={styles.navLogoPart1}>AI</span>
-          <span style={styles.navLogoPart2}>Stream</span>
+          <span style={styles.navLogoPart1}>KaamwaliCam</span>
+          
         </Link>
         <div style={styles.navLinks}>
           <Link to="/premium" style={styles.navLink}>Premium</Link>

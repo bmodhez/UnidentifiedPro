@@ -67,7 +67,7 @@ function VideoPage({ videos }) {
       <div style={styles.description}>
         <h2 style={styles.sectionTitle}>Description</h2>
         <p style={styles.descriptionText}>
-          This is the sample description for <strong>{selectedVideo.title}</strong>. Enjoy watching!
+          This is the description for <strong>{selectedVideo.title}</strong>. Enjoy watching!
         </p>
       </div>
 
